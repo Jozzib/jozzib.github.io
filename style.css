@@ -1,4 +1,66 @@
-/* --- Portfolio Section Styles --- */
+/* --- Global Styles & Theme --- */
+body {
+background-color: #0d0d0d;
+color: #fff;
+font-family: 'Inter', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* --- Navigation Bar --- */
+header {
+background: #111;
+border-bottom: 1px solid #222;
+padding: 20px 0;
+position: relative;
+}
+
+.nav-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+.logo {
+color: #d4af37;
+font-family: 'Playfair Display', serif;
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 30px;
+margin: 0;
+padding: 0;
+}
+
+.nav-links li a {
+color: #ccc;
+text-decoration: none;
+font-size: 15px;
+transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+color: #d4af37;
+}
+
+.menu-toggle {
+display: none;
+color: #d4af37;
+font-size: 28px;
+cursor: pointer;
+}
+
+/* --- Portfolio Main & Grid --- */
 .portfolio-main {
 padding: 50px 20px 80px;
 max-width: 1200px;
@@ -81,4 +143,29 @@ color: #999;
 font-size: 14px;
 line-height: 1.5;
 margin: 0;
+}
+
+/* --- Responsive Mobile Menu --- */
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background: #111;
+padding: 20px 0;
+text-align: center;
+border-bottom: 1px solid #222;
+box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.nav-links.active {
+display: flex;
+}
+
+.menu-toggle {
+display: block;
+}
 }
