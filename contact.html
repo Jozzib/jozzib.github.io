@@ -17,51 +17,54 @@
 <li><a href="about.html">About</a></li>
 <li><a href="portfolio.html">Portfolio</a></li>
 <li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
 </ul>
 </nav>
-<div class="menu-toggle">☰</div>
+<div class="menu-toggle">≡</div>
 </div>
 </header>
 
-<main>
-<section class="section">
-<div class="section-header">
-<span>Get In Touch</span>
-<h2>Let's Talk</h2>
+<main style="max-width: 800px; margin: 50px auto; padding: 0 20px 80px;">
+<div style="text-align: center; margin-bottom: 40px;">
+<h1 style="color: #d4af37; font-family: 'Playfair Display', serif; font-size: 38px; margin-bottom: 10px;">Get In Touch</h1>
+<p style="color: #aaa; font-size: 16px;">Have an idea or a project in mind? Let's build something exceptional together.</p>
 </div>
-<div class="contact-wrapper">
-<div class="contact-info">
-<h3>Start a Project</h3>
-<p>Have an idea or a project in mind? Reach out directly through any of the channels below or fill out the form.</p>
-<div class="contact-details">
-<div class="contact-item">
-<span>✉</span> Jozziofficial@gmail.com
+
+<div style="background: #141414; border: 1px solid #262626; border-radius: 12px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+
+<!-- Direct Contact Info -->
+<div style="margin-bottom: 35px; display: flex; gap: 30px; flex-wrap: wrap; border-bottom: 1px solid #222; padding-bottom: 25px;">
+<div>
+<p style="color: #888; font-size: 13px; text-transform: uppercase; margin: 0 0 5px 0; letter-spacing: 1px;">Email Me</p>
+<a href="mailto:Jozziofficial@gmail.com" style="color: #fff; text-decoration: none; font-size: 16px; font-weight: 500;">Jozziofficial@gmail.com</a>
 </div>
-<div class="contact-item">
-<span>📞</span> +2348023467011
+<div>
+<p style="color: #888; font-size: 13px; text-transform: uppercase; margin: 0 0 5px 0; letter-spacing: 1px;">Call / WhatsApp</p>
+<a href="tel:+2348023467011" style="color: #fff; text-decoration: none; font-size: 16px; font-weight: 500;">+234 802 346 7011</a>
 </div>
 </div>
+
+<!-- Contact Form -->
+<form action="https://formsubmit.co/Jozziofficial@gmail.com" method="POST">
+<div style="margin-bottom: 20px;">
+<label style="display: block; color: #ccc; font-size: 14px; margin-bottom: 8px;">Your Name</label>
+<input type="text" name="name" required style="width: 100%; padding: 14px; background: #1f1f1f; border: 1px solid #333; border-radius: 6px; color: #fff; font-size: 15px; box-sizing: border-box; outline: none;">
 </div>
-<form id="contactForm">
-<div class="form-group">
-<input type="text" class="form-control" placeholder="Your Name" required>
+
+<div style="margin-bottom: 20px;">
+<label style="display: block; color: #ccc; font-size: 14px; margin-bottom: 8px;">Your Email</label>
+<input type="email" name="email" required style="width: 100%; padding: 14px; background: #1f1f1f; border: 1px solid #333; border-radius: 6px; color: #fff; font-size: 15px; box-sizing: border-box; outline: none;">
 </div>
-<div class="form-group">
-<input type="email" class="form-control" placeholder="Your Email" required>
+
+<div style="margin-bottom: 25px;">
+<label style="display: block; color: #ccc; font-size: 14px; margin-bottom: 8px;">Your Message</label>
+<textarea name="message" rows="5" required style="width: 100%; padding: 14px; background: #1f1f1f; border: 1px solid #333; border-radius: 6px; color: #fff; font-size: 15px; box-sizing: border-box; outline: none; resize: vertical;"></textarea>
 </div>
-<div class="form-group">
-<textarea class="form-control" placeholder="Your Message" required></textarea>
-</div>
-<button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+
+<button type="submit" style="background: #d4af37; color: #000; border: none; padding: 14px 28px; border-radius: 6px; font-weight: 600; font-size: 16px; cursor: pointer; width: 100%; transition: opacity 0.3s;">Send Message</button>
 </form>
 </div>
-</section>
 </main>
-
-<footer>
-<p>&copy; 2026 Jozzi B. All rights reserved. Designed with <span>Luxury & Precision</span>.</p>
-</footer>
 
 <script src="script.js"></script>
 </body>
