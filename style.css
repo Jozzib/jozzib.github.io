@@ -386,3 +386,30 @@ padding: 2rem;
 gap: 2rem;
 }
 }
+/* Mobile Menu Toggle Fix */
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 70px;
+left: 0;
+width: 100%;
+background-color: #0d0d0d;
+padding: 20px 0;
+box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+border-bottom: 1px solid #d4af37;
+z-index: 1000;
+}
+
+.nav-links.active {
+display: flex !important;
+}
+
+.menu-toggle {
+display: block;
+cursor: pointer;
+font-size: 24px;
+color: #d4af37;
+}
+}
